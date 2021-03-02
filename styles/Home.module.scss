@@ -1,0 +1,227 @@
+.sectionOne {
+  position: relative;
+  height: 100vh;
+  min-height: 550px;
+  width: 100%;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  grid-template-areas:
+    '.'
+    'header'
+    'scroll-button';
+  place-items: center left;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  .backgroundImages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      object-fit: cover;
+      transition: opacity 0.5s ease 0.2s;
+
+      &.active {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    @media screen and (max-width: 650px) {
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+  }
+
+  .header {
+    position: relative;
+    grid-area: header;
+    .tagline {
+      position: relative;
+      height: Min(5em, 35.84vw); // height of the svg images
+      margin-bottom: 48px;
+      .strong,
+      .proud,
+      .unified {
+        display: block;
+        transition: opacity 0.5s ease 0.1s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: Min(537px, 80vw);
+
+        &.active {
+          opacity: 1;
+          transition: opacity 0.5s ease;
+        }
+      }
+    }
+    .buttons {
+      display: inline-grid;
+      grid-template: 1fr / auto auto;
+      gap: 24px;
+
+      @media screen and (max-width: 560px) {
+        grid-template: auto auto / 1fr;
+      }
+    }
+  }
+  .scrollButton {
+    grid-area: scroll-button;
+    position: relative;
+  }
+}
+.sectionTwo {
+  display: grid;
+  grid-template: auto auto / 1fr auto;
+  background: var(--color-white);
+  position: relative;
+
+  grid-template-areas:
+    'content decor'
+    'links decor';
+
+  padding: 128px;
+
+  @media screen and (max-width: 900px) {
+    grid-template: 1fr / auto 1fr auto;
+    grid-template-areas: 'decor' 'content' 'links';
+  }
+  @media screen and (max-width: 800px) {
+    padding: 64px 32px;
+  }
+
+  .content {
+    grid-area: content;
+
+    h2 {
+      margin-bottom: 48px;
+      padding-right: 48px;
+      span {
+        white-space: nowrap;
+      }
+      @media screen and (max-width: 1184px) {
+        width: 400px;
+      }
+      @media screen and (max-width: 900px) {
+        width: auto;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+      @media screen and (max-width: 500px) {
+        margin-top: 8px;
+        margin-bottom: 24px;
+        padding-right: 0;
+      }
+    }
+    p {
+      margin-bottom: 32px;
+      padding-right: 128px;
+      @media screen and (max-width: 1080px) {
+        padding-right: 64px;
+      }
+
+      @media screen and (max-width: 500px) {
+        margin-top: 8px;
+        margin-bottom: 24px;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .decor {
+    grid-area: decor;
+    position: relative;
+    padding-left: 84px;
+
+    .horizontal {
+      position: relative;
+      @media screen and (max-width: 1284px) {
+        width: 300px;
+      }
+    }
+
+    .emptyBox {
+      width: 200px;
+      height: 300px;
+      border: 10px solid var(--color-dark-gray);
+      position: absolute;
+      top: 270px;
+      left: 230px;
+
+      @media screen and (max-width: 1284px) {
+        width: 150px;
+        height: 225px;
+        top: 200px;
+        left: 180px;
+      }
+    }
+
+    .vertical {
+      position: absolute;
+      top: 130px;
+      left: 0;
+
+      @media screen and (max-width: 1284px) {
+        top: 100px;
+        width: 225px;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      .horizontal {
+        top: 32px;
+        left: 32px;
+        width: 40%;
+        z-index: 1;
+      }
+      .emptyBox {
+        position: relative;
+        top: -32px;
+        left: 0;
+        width: 25vw;
+        height: 35vw;
+        border-width: 5px;
+      }
+      .vertical {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: 32px;
+        width: 40%;
+      }
+    }
+  }
+
+  .links {
+    grid-area: links;
+    padding-top: 72px;
+    margin-left: -24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

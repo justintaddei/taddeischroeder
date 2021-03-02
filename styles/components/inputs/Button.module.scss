@@ -1,0 +1,19 @@
+.button {
+  padding: 8px 24px;
+  border-radius: 2px;
+  display: inline-grid;
+  grid-template: 1fr / 1fr auto;
+  place-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+
+  &.white {
+    background: var(--color-white);
+    color: var(--color-dark-gray);
+  }
+  &.blue {
+    background: var(--color-campaign-blue);
+    color: var(--color-white);
+  }
+}

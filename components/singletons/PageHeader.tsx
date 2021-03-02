@@ -38,7 +38,9 @@ const PageHeader = () => {
 
   return (
     <header className={classes.header}>
-      <img className={classes.logo} src="/logo.svg" alt="Taddei Schroeder Logo" />
+      <Link href="/">
+        <img className={classes.logo} src="/logo.svg" alt="Taddei Schroeder Logo" />
+      </Link>
       <input
         ref={toggleButton}
         hidden
@@ -74,9 +76,9 @@ const PageHeader = () => {
               </li>
             </ul>
           </li>
-          <li>
+          {/* <li>
             <NavButton href="/events">Events</NavButton>
-          </li>
+          </li> */}
           <li>
             <NavButton href="/contact">Connect With Us</NavButton>
           </li>
