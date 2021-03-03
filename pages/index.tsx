@@ -1,7 +1,7 @@
 import Button from '@/components/inputs/Button'
 import ButtonScroll from '@/components/inputs/ButtonScroll'
 import Layout from '@/components/Layout'
-import { motion, useCycle } from 'framer-motion'
+import { useCycle } from 'framer-motion'
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 import classes from '../styles/Home.module.scss'
@@ -16,7 +16,10 @@ export default function Home() {
   }, [])
 
   return (
-    <Layout title="Taddei / Schroeder for ASCSU 2021 | Official Site" description="">
+    <Layout
+      title="Taddei / Schroeder for ASCSU 2021 | Official Site"
+      description="A space where all rams can come together, an area where our school pride is heightened every day, a location where rams with varying backgrounds and perspectives can mingle with no hostility. The space where everybody is proud to be a CSU ram."
+    >
       <main>
         <section className={classes.sectionOne}>
           <div className={classes.backgroundImages}>

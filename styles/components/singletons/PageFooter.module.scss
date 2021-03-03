@@ -1,0 +1,22 @@
+.footer {
+  background: var(--color-dark-gray);
+  min-height: 72px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+
+  p {
+    color: var(--color-campaign-pale-blue);
+    .noWrap {
+      white-space: nowrap;
+      border-bottom: 1px solid var(--color-campaign-pale-blue);
+      &:hover {
+        opacity: 0.75;
+      }
+      @media screen and (max-width: 555px) {
+        display: block;
+      }
+    }
+  }
+}

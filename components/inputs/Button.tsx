@@ -25,7 +25,7 @@ const Button = ({
         <a
           ref={wave}
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           className={`${classes.button} ${classes[look]}`}
         >
           {children} {icon && <Icon name={icon} />}

@@ -6,7 +6,7 @@ import React, { FormEvent, useState } from 'react'
 import btnClasses from '../styles/components/inputs/Button.module.scss'
 import classes from '../styles/Contact.module.scss'
 
-export default function Home() {
+export default function Contact() {
   const [formSubmissionResult, setFormSubmissionResult] = useState({
     success: false,
     message: '',
@@ -33,26 +33,48 @@ export default function Home() {
   }
 
   return (
-    <Layout title="Connect With Us | Taddei / Schroeder for ASCSU 2021" description="">
+    <Layout
+      title="Connect With Us | Taddei / Schroeder for ASCSU 2021"
+      description="Get in touch with the Taddei/Schroeder Campaign"
+    >
       <main className={classes.main}>
         <h1 className={classes.heading}>
           <span className="text-red">Connect</span> With Us
         </h1>
 
-        <form noValidate onSubmit={submit} className={classes.form}>
-          <Input className={classes.input} label="Name" name="name" />
-          <Input className={classes.input} label="Email" name="email" type="email" />
-          <Input className={classes.input} label="Message" name="message" type="textarea" />
-          <button type="submit" className={`${btnClasses.button} ${btnClasses.blue}`}>
-            Send <Send />
-          </button>
-        </form>
+        {formSubmissionResult.success ? (
+          <div className="form">
+            <h3>Thanks {formSubmissionResult.name}!</h3>
+            <p>We'll get back to you soon.</p>
+          </div>
+        ) : (
+          <form noValidate onSubmit={submit} className={classes.form}>
+            <Input className={classes.input} label="Name" name="name" />
+            <Input className={classes.input} label="Email" name="email" type="email" />
+            <Input className={classes.input} label="Message" name="message" type="textarea" />
+            <button type="submit" className={`${btnClasses.button} ${btnClasses.blue}`}>
+              Send <Send />
+            </button>
+            {formSubmissionResult.message && (
+              <p className={classes.formError}>{formSubmissionResult.message}</p>
+            )}
+          </form>
+        )}
         <div className={classes.divider}></div>
         <div className={classes.platforms}>
           <h3>Follow us on Instagram</h3>
-          <Button newWindow href="https://instagram.com/taddei_schroeder2021" look="blue">
-            @taddei_schroeder2021
-          </Button>
+          <div className={classes.instagram}>
+            <Button newWindow href="https://instagram.com/taddei_schroeder2021" look="blue">
+              @taddei_schroeder2021
+            </Button>
+            <Button
+              newWindow
+              href="https://www.instagram.com/explore/tags/forevercampus/"
+              look="blue"
+            >
+              #forevercampus
+            </Button>
+          </div>
           <h3>Reach out via email</h3>
           <Button href="mailto:team@taddeischroeder.com" look="blue">
             team@taddeischroeder.com

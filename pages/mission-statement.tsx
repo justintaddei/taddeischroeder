@@ -1,20 +1,14 @@
 import Button from '@/components/inputs/Button'
 import Layout from '@/components/Layout'
-import { useCycle } from 'framer-motion'
-import React, { useEffect } from 'react'
+import React from 'react'
 import classes from '../styles/MissionStatement.module.scss'
 
-export default function Home() {
-  const [activeSentence, cycleActiveSentence] = useCycle('strong', 'proud', 'unified')
-
-  useEffect(() => {
-    const token = setInterval(cycleActiveSentence, 3000)
-
-    return () => clearInterval(token)
-  }, [])
-
+export default function MissionStatement() {
   return (
-    <Layout title="Mission Statement | Taddei / Schroeder for ASCSU 2021" description="">
+    <Layout
+      title="Mission Statement | Taddei / Schroeder for ASCSU 2021"
+      description="The Taddei/Schroeder campaign is focusing on the resilience of the CSU community, and how we can continue to build CSU’s resilience through sustainability and smarter spending habits."
+    >
       <main className={classes.main}>
         <h1>
           The <span className="text-red">Forever</span> Campus
@@ -32,13 +26,13 @@ export default function Home() {
           breaks, this would save us hundreds to thousands of dollars every year. With the money we
           would be saving from increased smart energy habits, we could allocate these funds to
           furthering sustainability at CSU as well as allotting a certain percentage of funds back
-          to students. Students could see this improvement everyday through credits in Uber/lyft,
+          to students. Students could see this improvement everyday through credits in Uber/Lyft,
           and RamCash. Continuing the relationship made with Uber and Lyft by the current
           administration would help students get around efficiently and safely, and allocating funds
           back to students via RamCash would act as an incentive for increased presence on campus.
           Increased presence on campus would help campus culture and continue to unify students
           after a hard year. Achieving these goals would only be beneficial. Two more goals the
-          Taddei/Shroeder campaign will achieve is installing more water bottle filling stations on
+          Taddei/Schroeder campaign will achieve is installing more water bottle filling stations on
           campus, which would reduce the amount of waste even further, and installing more water
           bottle stations would be an incentive to use reusable water bottles instead of disposable
           plastic ones. We would increase the number of trash cans around campus for the increased
@@ -68,21 +62,21 @@ export default function Home() {
           We can all agree that it is not the infrastructure that makes the campus, it's the
           students. That being said, COVID has taken its toll on Ram Pride and student retention
           more than ever before. This fall, it is our time to come back stronger, prouder, and more
-          unified than we’ve ever been. The Taddei/Shroeder campaign will focus on student retention
-          rates and campus culture. Bringing Ram Pride back to CSU will make a world of difference,
-          it's time for football games and tailgates. Students go to college for a degree but also
-          for the “College Experience.” Lets spark RAM PRIDE, unify our students, and create a
-          forever campus.
+          unified than we’ve ever been. The Taddei/Schroeder campaign will focus on student
+          retention rates and campus culture. Bringing Ram Pride back to CSU will make a world of
+          difference, it's time for football games and tailgates. Students go to college for a
+          degree but also for the “College Experience.” Lets spark RAM PRIDE, unify our students,
+          and create a forever campus.
         </p>
         <div className={classes.links}>
+          <Button href="/why-us" icon="chevron-right">
+            Why Us
+          </Button>
           <Button href="/about-lys" icon="chevron-right">
             About Lys Taddei
           </Button>
           <Button href="/about-weston" icon="chevron-right">
             About Weston Schroeder
-          </Button>
-          <Button href="/contact" icon="chevron-right">
-            Connect With Us
           </Button>
         </div>
       </main>

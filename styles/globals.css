@@ -23,7 +23,7 @@ a {
   --color-dark-gray: rgba(33, 33, 33, 1);
   --color-campaign-blue: rgba(34, 53, 87, 1);
   --color-campaign-pale-blue: rgba(242, 250, 238, 1);
-  --color-campaign-red: rgba(220, 61, 75, 1);
+  --color-campaign-red: #dc3d4b;
   --color-campaign-light-blue: rgba(78, 123, 156, 1);
   /*  
   blue shadow 0px 8px 32px rgba(34, 53, 87, 0.15);
