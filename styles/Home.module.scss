@@ -162,16 +162,16 @@
 
     .emptyBox {
       width: 200px;
-      height: 300px;
+      height: 290px;
       border: 10px solid var(--color-dark-gray);
       position: absolute;
-      top: 270px;
+      top: 260px;
       left: 230px;
 
       @media screen and (max-width: 1284px) {
         width: 150px;
-        height: 225px;
-        top: 200px;
+        height: 200px;
+        top: 150px;
         left: 180px;
       }
     }
@@ -202,7 +202,7 @@
         top: -32px;
         left: 0;
         width: 25vw;
-        height: 35vw;
+        height: 30vw;
         border-width: 5px;
       }
       .vertical {

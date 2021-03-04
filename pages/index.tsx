@@ -90,11 +90,11 @@ export default function Home() {
           </div>
           <div className={classes.decor}>
             <div className={classes.horizontal}>
-              <Image width="400" height="300" src="/images/home/horizontal.jpg" alt="" />
+              <Image width="448" height="300" src="/images/home/horizontal.jpg" alt="" />
             </div>
             <div className={classes.emptyBox}></div>
             <div className={classes.vertical}>
-              <Image width="300" height="400" src="/images/home/vertical.jpg" alt="" />
+              <Image width="377.3" height="360" src="/images/home/vertical.jpg" alt="" />
             </div>
           </div>
           <div className={classes.links}>

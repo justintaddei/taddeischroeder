@@ -1,6 +1,7 @@
 import Button from '@/components/inputs/Button'
 import Layout from '@/components/Layout'
 import React from 'react'
+import Image from 'next/image'
 import classes from '../styles/AboutLys.module.scss'
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
           <p>
             <span className={classes.photo}>
               <span className={classes.decor}></span>
-              <img src="/images/about-lys.jpg" alt="" />
+              <Image width={400} height={582} src="/images/about-lys.jpg" alt="" />
             </span>
             My name is Lys Taddei. I am an Interior Architecture and Design student here at CSU.
             Ever since I was a little girl, I have been a{' '}

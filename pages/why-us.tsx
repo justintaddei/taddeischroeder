@@ -1,6 +1,7 @@
 import Icon from '@/components/Icon'
 import Button from '@/components/inputs/Button'
 import Layout from '@/components/Layout'
+import Image from 'next/image'
 import React from 'react'
 import classes from '../styles/WhyUs.module.scss'
 
@@ -16,6 +17,15 @@ export default function Home() {
             <h1>
               <span className="text-red">Why</span> We're Running
             </h1>
+            <div className={classes.cover}>
+              <Image
+                src="/images/lys-weston.jpg"
+                width={800}
+                height={450}
+                layout="responsive"
+                alt=""
+              />
+            </div>
             <p>
               Lys Taddei and Weston Schroeder envision a{' '}
               <span className="text-blue">forever campus</span>. A space where past, present, and
@@ -31,7 +41,8 @@ export default function Home() {
               unified.
             </p>
           </div>
-          <div className={classes.images}></div>
+          {/* 
+          <div className={classes.images}></div> */}
         </section>
         <section className={classes.sectionTwo}>
           <h2>

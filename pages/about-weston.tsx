@@ -1,6 +1,7 @@
 import Button from '@/components/inputs/Button'
 import Layout from '@/components/Layout'
 import React from 'react'
+import Image from 'next/image'
 import classes from '../styles/AboutWeston.module.scss'
 
 export default function Home() {
@@ -19,7 +20,8 @@ export default function Home() {
           <p>
             <span className={classes.photo}>
               <span className={classes.decor}></span>
-              <img src="/images/about-weston.jpg" alt="" />
+
+              <Image width={400} height={494} src="/images/about-weston.jpg" alt="" />
             </span>
             Aloha, ‘O Weston Schroeder ko’u inoa. I am currently a sophomore, political science
             student, and I am running me ko’u hoa aloha Lys Taddei for the executive office of
