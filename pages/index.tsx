@@ -23,20 +23,24 @@ export default function Home() {
       <main>
         <section className={classes.sectionOne}>
           <div className={classes.backgroundImages}>
-            <img
+            <Image
+              layout="fill"
               className={`${classes.unifiedImg} fade-in-long ${
                 activeSentence === 'unified' ? classes.active : ''
               }`}
               src="/images/home/unified.jpg"
               alt=""
             />
-            <img
+            <Image
+              layout="fill"
               className={`fade-in-long ${activeSentence === 'proud' ? classes.active : ''}`}
               src="/images/home/proud.jpg"
               alt=""
             />
 
-            <img
+            <Image
+              priority
+              layout="fill"
               className={activeSentence === 'strong' ? classes.active : ''}
               src="/images/home/strong.jpg"
               alt=""
