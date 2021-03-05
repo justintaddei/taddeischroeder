@@ -31,6 +31,12 @@
       object-fit: cover;
       transition: opacity 0.5s ease 0.2s;
 
+      @media screen and (max-width: 630px) {
+        &.unifiedImg {
+          object-position: 60% center;
+        }
+      }
+
       &.active {
         opacity: 1;
         transition: opacity 0.5s ease;

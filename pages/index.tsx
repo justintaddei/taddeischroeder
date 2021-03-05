@@ -34,7 +34,9 @@ export default function Home() {
               alt=""
             />
             <img
-              className={activeSentence === 'unified' ? classes.active : ''}
+              className={`${classes.unifiedImg} ${
+                activeSentence === 'unified' ? classes.active : ''
+              }`}
               src="/images/home/unified.jpg"
               alt=""
             />
