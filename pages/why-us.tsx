@@ -19,6 +19,7 @@ export default function Home() {
             </h1>
             <div className={classes.cover}>
               <Image
+                priority
                 src="/images/lys-weston.jpg"
                 width={800}
                 height={450}

@@ -20,7 +20,7 @@ export default function Home() {
           <p>
             <span className={classes.photo}>
               <span className={classes.decor}></span>
-              <Image width={400} height={582} src="/images/about-lys.jpg" alt="" />
+              <Image priority width={400} height={582} src="/images/about-lys.jpg" alt="" />
             </span>
             My name is Lys Taddei. I am an Interior Architecture and Design student here at CSU.
             Ever since I was a little girl, I have been a{' '}

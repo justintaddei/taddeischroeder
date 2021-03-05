@@ -21,7 +21,7 @@ export default function Home() {
             <span className={classes.photo}>
               <span className={classes.decor}></span>
 
-              <Image width={400} height={494} src="/images/about-weston.jpg" alt="" />
+              <Image priority width={400} height={494} src="/images/about-weston.jpg" alt="" />
             </span>
             Aloha, ‘O Weston Schroeder ko’u inoa. I am currently a sophomore, political science
             student, and I am running me ko’u hoa aloha Lys Taddei for the executive office of
