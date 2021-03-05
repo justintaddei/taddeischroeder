@@ -115,6 +115,24 @@ export default function Home() {
             </li>
           </ul>
         </section>
+        <div className={classes.links}>
+          <Button href="/about-lys" icon="chevron-right">
+            About Lys Taddei
+          </Button>
+          <Button href="/about-weston" icon="chevron-right">
+            About Weston Schroeder
+          </Button>
+          <Button href="/mission-statement" icon="chevron-right">
+            Our Mission Statement
+          </Button>
+          <Button
+            newWindow
+            href="https://collegian.com/2021/02/category-news-ascsu-campaign-lys-taddei-and-weston-schroeder/"
+            icon="arrow-up-right"
+          >
+            Collegian Publication
+          </Button>
+        </div>
       </main>
     </Layout>
   )

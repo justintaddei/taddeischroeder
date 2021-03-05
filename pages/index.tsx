@@ -107,8 +107,12 @@ export default function Home() {
               About Weston Schroeder
             </Button>
             {
-              <Button href="/contact" icon="chevron-right">
-                Connect With Us
+              <Button
+                newWindow
+                href="https://collegian.com/2021/02/category-news-ascsu-campaign-lys-taddei-and-weston-schroeder/"
+                icon="arrow-up-right"
+              >
+                Collegian Publication
               </Button>
             }
           </div>

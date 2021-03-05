@@ -6,6 +6,7 @@ import useWave from 'use-wave'
 import DropdownIcon from '../../public/icons/chevron-down.svg'
 import MenuIcon from '../../public/icons/menu.svg'
 import CloseIcon from '../../public/icons/x.svg'
+import NewTab from '../../public/icons/arrow-up-right.svg'
 
 interface NavButtonProps {
   href: string
@@ -20,7 +21,11 @@ const NavButton = ({ href, children }: PropsWithChildren<NavButtonProps>) => {
 
   return (
     <Link href={href}>
-      <a ref={wave} className={`${classes.navButton} ${isActive ? classes.active : ''}`}>
+      <a
+        ref={wave}
+        target={href.startsWith('http') ? '_blank' : '_self'}
+        className={`${classes.navButton} ${isActive ? classes.active : ''}`}
+      >
         {children}
       </a>
     </Link>
@@ -73,6 +78,11 @@ const PageHeader = () => {
               </li>
               <li>
                 <NavButton href="/about-weston">About Weston Schroeder</NavButton>
+              </li>
+              <li>
+                <NavButton href="https://collegian.com/2021/02/category-news-ascsu-campaign-lys-taddei-and-weston-schroeder/">
+                  Collegian Publication <NewTab />
+                </NavButton>
               </li>
             </ul>
           </li>
