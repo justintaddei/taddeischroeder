@@ -36,8 +36,7 @@ const Layout = ({ title, description, children }: PropsWithChildren<Props>) => {
         />
       </Head>
 
-      <PageHeader />
-      {children}
+      <div className="fade-in">{children}</div>
       <PageFooter />
     </>
   )

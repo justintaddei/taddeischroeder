@@ -24,20 +24,21 @@ export default function Home() {
         <section className={classes.sectionOne}>
           <div className={classes.backgroundImages}>
             <img
-              className={activeSentence === 'strong' ? classes.active : ''}
-              src="/images/home/strong.jpg"
-              alt=""
-            />
-            <img
-              className={activeSentence === 'proud' ? classes.active : ''}
-              src="/images/home/proud.jpg"
-              alt=""
-            />
-            <img
-              className={`${classes.unifiedImg} ${
+              className={`${classes.unifiedImg} fade-in-long ${
                 activeSentence === 'unified' ? classes.active : ''
               }`}
               src="/images/home/unified.jpg"
+              alt=""
+            />
+            <img
+              className={`fade-in-long ${activeSentence === 'proud' ? classes.active : ''}`}
+              src="/images/home/proud.jpg"
+              alt=""
+            />
+
+            <img
+              className={activeSentence === 'strong' ? classes.active : ''}
+              src="/images/home/strong.jpg"
               alt=""
             />
           </div>

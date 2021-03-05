@@ -1,7 +1,7 @@
 import classes from '@/styles/components/singletons/PageHeader.module.scss'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import React, { PropsWithChildren } from 'react'
+import React, { PropsWithChildren, useEffect } from 'react'
 import useWave from 'use-wave'
 import DropdownIcon from '../../public/icons/chevron-down.svg'
 import MenuIcon from '../../public/icons/menu.svg'
@@ -34,6 +34,11 @@ const NavButton = ({ href, children }: PropsWithChildren<NavButtonProps>) => {
 
 const PageHeader = () => {
   const wave = useWave()
+  const { route } = useRouter()
+
+  useEffect(() => {
+    if (document.activeElement instanceof HTMLElement) document.activeElement.blur()
+  }, [route])
 
   const toggleButton = React.createRef<HTMLInputElement>()
 
@@ -57,7 +62,7 @@ const PageHeader = () => {
         <MenuIcon />
         <CloseIcon />
       </label>
-      <nav onClick={() => closeNav()}>
+      <nav className="fade-in" onClick={() => closeNav()}>
         <ul>
           <li>
             <NavButton href="/">Home</NavButton>
