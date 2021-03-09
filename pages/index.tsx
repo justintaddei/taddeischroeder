@@ -49,6 +49,7 @@ export default function Home() {
           <div className={classes.overlay}></div>
           <header className={classes.header}>
             <h1 className={classes.tagline}>
+              <span>Forever strong, forever proud, forever unified.</span>
               <img
                 className={`${classes.strong} ${activeSentence === 'strong' ? classes.active : ''}`}
                 src="/images/forever-strong.svg"

@@ -65,6 +65,10 @@
       position: relative;
       height: Min(5em, 35.84vw); // height of the svg images
       margin-bottom: 48px;
+      span {
+        position: absolute;
+        opacity: 0;
+      }
       .strong,
       .proud,
       .unified {
