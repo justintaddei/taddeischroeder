@@ -31,6 +31,10 @@ const Layout = ({ title, description, children }: PropsWithChildren<Props>) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#dc3d4b" />
 
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6PZWHYZLF"></script>
+        <script defer src="/ga.js"></script>
+
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
           rel="stylesheet"
