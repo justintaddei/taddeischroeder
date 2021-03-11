@@ -89,6 +89,11 @@ const PageHeader = () => {
                   Collegian Publication <NewTab />
                 </NavButton>
               </li>
+              <li>
+                <NavButton href="https://www.youtube.com/watch?v=ZIE5lkl4DwM">
+                  CTV 11 Interview <NewTab />
+                </NavButton>
+              </li>
             </ul>
           </li>
           {/* <li>
