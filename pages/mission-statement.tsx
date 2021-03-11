@@ -46,14 +46,23 @@ export default function MissionStatement() {
           Forever <span className="text-red">Proud</span>
         </h2>
         <p>
-          The Taddei/Schroeder campaign acknowledges the lack of genuine and holistic cultural
-          education and representation on campus. We aim to create a unified space with all cultural
-          centers while making cultural education less taboo for students. We believe that if all
-          students have the opportunity to learn from one another, we can build with one another.
-          It’s been a year since we were sent home because of the COVID-19 pandemic, we have all
-          been affected in one way or another. Student retention is on the decline and so is school
-          spirit. This year has taken its toll, it's time we take this opportunity and link horns so
-          we can build our forever campus.
+          Being a CSU ram is a blessing. CSU is rich in opportunity, diversity, and social
+          interaction, but not under lockdown. We will work on COVID-19 recovery and opening back up
+          safely &amp; quickly so students can begin getting their well deserved college experience
+          again. With vaccinations rolling out and with all the measures that are in place. We are
+          now doing more damage to mental health than we are good to physical health by being shut
+          down. Not only is the campus charging us full in person rates at a time when we are barely
+          in person at all, we are also losing out on many of the things that actually make life
+          worth living. Covid might get you, but you also may die in a car accident tomorrow. Life
+          is not permanent and college is when you’re supposed to make some of the best memories of
+          your life. It’s when you learn how to be a successful adult and make relationships that
+          last, and we are all being deprived of that. We aim to create a unified space with all
+          individuals coming in to fall 2021. We believe that if all students have the opportunity
+          to learn from one another, we can build with one another. It’s been a year since we were
+          sent home because of the COVID-19 pandemic, we have all been affected in one way or
+          another. Student retention is on the decline and so is school spirit. This year has taken
+          its toll, it's time we take this opportunity and link horns so we can build our forever
+          campus.
         </p>
         <h2>
           Forever <span className="text-red">Unified</span>
