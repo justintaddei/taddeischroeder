@@ -26,8 +26,8 @@ const post = async (req: NextApiRequest, res: NextApiResponse) => {
 
   // setup e-mail data, even with unicode symbols
   const mailOptions = {
-    from: `"Justin Taddei" <${process.env.EMAIL_ADDRESS}>`, // sender address (who sends)
-    to: process.env.EMAIL_ADDRESS, // list of receivers (who receives)
+    from: `${name} <${process.env.EMAIL_ADDRESS}>`, // sender address (who sends)
+    to: `${process.env.EMAIL_ADDRESS}, taddeischroeder@gmail.com`, // list of receivers (who receives)
     replyTo: email,
     subject: `Website form submission from ${name}`, // Subject line
     html: `

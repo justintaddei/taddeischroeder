@@ -76,8 +76,8 @@ export default function Contact() {
             </Button>
           </div>
           <h3>Reach out via email</h3>
-          <Button href="mailto:team@taddeischroeder.com" look="blue">
-            team@taddeischroeder.com
+          <Button href="mailto:taddeischroeder@gmail.com" look="blue">
+            taddeischroeder@gmail.com
           </Button>
         </div>
       </main>
